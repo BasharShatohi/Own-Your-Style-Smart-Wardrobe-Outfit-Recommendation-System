@@ -1,0 +1,720 @@
+{
+ "info": {
+  "name": "own_your_style",
+  "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+ },
+ "item": [
+  {
+   "name": "user",
+   "item": [
+    {
+     "name": "register",
+     "request": {
+      "auth": {
+       "type": "noauth"
+      },
+      "method": "POST",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "urlencoded",
+       "urlencoded": [
+        {
+         "key": "first_name",
+         "value": "abby",
+         "type": "text"
+        },
+        {
+         "key": "last_name",
+         "value": "sdawd",
+         "type": "text"
+        },
+        {
+         "key": "email",
+         "value": "wmkadsd253@gmail.com",
+         "type": "text"
+        },
+        {
+         "key": "password",
+         "value": "1suamdwmawxs",
+         "type": "text"
+        },
+        {
+         "key": "password_confirmation",
+         "value": "1suamdwmawxs",
+         "type": "text"
+        },
+        {
+         "key": "birthday",
+         "value": "2003/3/20",
+         "type": "text"
+        },
+        {
+         "key": "gender",
+         "value": "male",
+         "type": "text"
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/register/"
+     },
+     "response": []
+    },
+    {
+     "name": "logout",
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "POST",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "urlencoded",
+       "urlencoded": [
+        {
+         "key": "first_name",
+         "value": "abby",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "last_name",
+         "value": "sdawd",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "email",
+         "value": "wmkad@gmail.com",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password_confirmation",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "birthday",
+         "value": "2003/3/20",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "gender",
+         "value": "male",
+         "type": "text"
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/logout/"
+     },
+     "response": []
+    },
+    {
+     "name": "login",
+     "request": {
+      "auth": {
+       "type": "noauth"
+      },
+      "method": "POST",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "urlencoded",
+       "urlencoded": [
+        {
+         "key": "first_name",
+         "value": "abby",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "last_name",
+         "value": "sdawd",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "email",
+         "value": "wmkadsd253@gmail.com",
+         "type": "text"
+        },
+        {
+         "key": "password",
+         "value": "1suamdwmawxs",
+         "type": "text"
+        },
+        {
+         "key": "password_confirmation",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "birthday",
+         "value": "2003/3/20",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "gender",
+         "value": "male",
+         "type": "text",
+         "disabled": true
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/login/"
+     },
+     "response": []
+    },
+    {
+     "name": "getUserAttributes",
+     "protocolProfileBehavior": {
+      "disableBodyPruning": true
+     },
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "GET",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "urlencoded",
+       "urlencoded": [
+        {
+         "key": "first_name",
+         "value": "abby",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "last_name",
+         "value": "sdawd",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "email",
+         "value": "wmkad@gmail.com",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password_confirmation",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "birthday",
+         "value": "2003/3/20",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "gender",
+         "value": "male",
+         "type": "text",
+         "disabled": true
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/users/3"
+     },
+     "response": []
+    },
+    {
+     "name": "updateUserAttributes",
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "PATCH",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "urlencoded",
+       "urlencoded": [
+        {
+         "key": "first_name",
+         "value": "Jane",
+         "type": "text"
+        },
+        {
+         "key": "last_name",
+         "value": "sdawd",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "email",
+         "value": "wmkad@gmail.com",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "password_confirmation",
+         "value": "1suamdwmawxs",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "birthday",
+         "value": "2003/3/20",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "gender",
+         "value": "male",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "favorite_color_group",
+         "value": "neutrals",
+         "type": "text"
+        },
+        {
+         "key": "favorite_pattern",
+         "value": "geometric",
+         "type": "text"
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/users/1"
+     },
+     "response": []
+    }
+   ]
+  },
+  {
+   "name": "clothingItems",
+   "item": [
+    {
+     "name": "create a clothingItem",
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "POST",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "formdata",
+       "formdata": [
+        {
+         "key": "color_group",
+         "value": "metallics",
+         "type": "text"
+        },
+        {
+         "key": "category",
+         "value": "Earrings",
+         "type": "text"
+        },
+        {
+         "key": "category_group",
+         "value": "Accessories & Bags",
+         "type": "text"
+        },
+        {
+         "key": "sleeve",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "neckline",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "fit",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "length",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "closure",
+         "value": "sunglasses",
+         "type": "text"
+        },
+        {
+         "key": "pattern",
+         "value": "paisley",
+         "type": "text"
+        },
+        {
+         "key": "material",
+         "value": "gold",
+         "type": "text"
+        },
+        {
+         "key": "user_id",
+         "value": "1",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "image",
+         "type": "file",
+         "src": "/C:/Users/ASUS/Desktop/image/27_result.png"
+        },
+        {
+         "key": "type",
+         "value": "sunglasses",
+         "type": "text"
+        },
+        {
+         "key": "height",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "toe",
+         "value": "",
+         "type": "text"
+        },
+        {
+         "key": "style",
+         "value": "",
+         "type": "text"
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/clothingitems"
+     },
+     "response": []
+    },
+    {
+     "name": "get ClothingItem",
+     "protocolProfileBehavior": {
+      "disableBodyPruning": true
+     },
+     "request": {
+      "method": "GET",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "raw",
+       "raw": ""
+      },
+      "url": "http://127.0.0.1:8000/api/clothingitems/3"
+     },
+     "response": []
+    },
+    {
+     "name": "get my clothes",
+     "protocolProfileBehavior": {
+      "disableBodyPruning": true
+     },
+     "request": {
+      "method": "GET",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "formdata",
+       "formdata": [
+        {
+         "key": "image",
+         "type": "file",
+         "src": "0NKOjB7rl/photo_2025-07-28_15-52-53.jpg",
+         "disabled": true
+        },
+        {
+         "key": "category_group",
+         "value": "Tops",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "category",
+         "value": "Button-down shirt",
+         "type": "text",
+         "disabled": true
+        },
+        {
+         "key": "color_group",
+         "value": "neutrals",
+         "type": "text",
+         "disabled": true
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/my-clothingitems"
+     },
+     "response": []
+    },
+    {
+     "name": "createpost",
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "POST",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       },
+       {
+        "key": "Content-Type",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "body": {
+       "mode": "formdata",
+       "formdata": [
+        {
+         "key": "user_id",
+         "value": "4",
+         "type": "text"
+        },
+        {
+         "key": "image",
+         "type": "file",
+         "src": "/C:/Users/ASUS/Desktop/ase.jpg"
+        },
+        {
+         "key": "outfit_id",
+         "value": "4",
+         "type": "text"
+        },
+        {
+         "key": "caption",
+         "value": "ghsfddsfsd",
+         "type": "text"
+        }
+       ]
+      },
+      "url": "http://127.0.0.1:8000/api/createpost"
+     },
+     "response": []
+    },
+    {
+     "name": "showmyPosts",
+     "request": {
+      "auth": {
+       "type": "bearer",
+       "bearer": {
+        "token": "{{access_token}}"
+       }
+      },
+      "method": "GET",
+      "header": [
+       {
+        "key": "Accept",
+        "value": "application/json",
+        "type": "text"
+       }
+      ],
+      "url": "http://127.0.0.1:8000/api/showmyPosts"
+     },
+     "response": []
+    }
+   ],
+   "auth": {
+    "type": "bearer",
+    "bearer": {
+     "token": "{{access_token}}"
+    }
+   },
+   "event": [
+    {
+     "listen": "prerequest",
+     "script": {
+      "type": "text/javascript",
+      "packages": {},
+      "exec": [
+       ""
+      ]
+     }
+    },
+    {
+     "listen": "test",
+     "script": {
+      "type": "text/javascript",
+      "packages": {},
+      "exec": [
+       ""
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "New Request",
+   "request": {
+    "method": "GET",
+    "header": []
+   },
+   "response": []
+  },
+  {
+   "name": "New Request",
+   "request": {
+    "method": "GET",
+    "header": []
+   },
+   "response": []
+  }
+ ],
+ "event": [
+  {
+   "listen": "prerequest",
+   "script": {
+    "type": "text/javascript",
+    "packages": {},
+    "exec": [
+     ""
+    ]
+   }
+  },
+  {
+   "listen": "test",
+   "script": {
+    "type": "text/javascript",
+    "packages": {},
+    "exec": [
+     ""
+    ]
+   }
+  }
+ ],
+ "variable": [
+  {
+   "key": "laravel_url",
+   "value": "http://127.0.0.1:8000",
+   "type": "string"
+  },
+  {
+   "key": "access_token",
+   "value": "",
+   "type": "string"
+  }
+ ]
+}

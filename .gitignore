@@ -1,0 +1,119 @@
+# ─────────────────────────────────────────────────────────
+# Secrets — never commit these
+# ─────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+ngrok.yml
+ngrok.exe
+
+# ─────────────────────────────────────────────────────────
+# Python  (ml/feature-extraction, ml/genetic)
+# ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Model weights — all models download from HuggingFace at runtime
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.ckpt
+*.h5
+*.tflite
+.cache/
+huggingface/
+transformers_cache/
+torch_cache/
+.u2net/
+u2net*.onnx
+
+# Per-request runtime artifacts, regenerated on every call
+ml/feature-extraction/item_without_background.png
+ml/feature-extraction/item_foreground_white_bg.jpg
+ml/feature-extraction/item_for_clip.png
+
+# ─────────────────────────────────────────────────────────
+# Laravel  (backend/)
+# ─────────────────────────────────────────────────────────
+/backend/vendor/
+/backend/node_modules/
+/backend/public/build/
+/backend/public/hot
+/backend/public/storage
+/backend/bootstrap/cache/*.php
+/backend/storage/*.key
+/backend/storage/app.zip
+/backend/storage/app/public/
+/backend/storage/framework/
+/backend/storage/logs/
+/backend/.phpunit.result.cache
+
+# Real user-uploaded clothing photos — third-party personal data
+/backend/storage/app/private/
+
+# ─────────────────────────────────────────────────────────
+# Flutter  (app/)
+# ─────────────────────────────────────────────────────────
+/app/build/
+/app/.dart_tool/
+/app/.flutter-plugins
+/app/.flutter-plugins-dependencies
+/app/.packages
+/app/.pub-cache/
+/app/.pub/
+/app/android/.gradle/
+/app/android/app/debug/
+/app/android/app/profile/
+/app/android/app/release/
+/app/android/local.properties
+/app/ios/Pods/
+/app/ios/Flutter/.last_build_id
+*.apk
+*.aab
+app.*.symbols
+app.*.map.json
+
+# ─────────────────────────────────────────────────────────
+# Datasets / local databases / logs
+# ─────────────────────────────────────────────────────────
+TEST_IMAGES/
+datasets/
+*.zip
+*.tar.gz
+*.7z
+*.sqlite
+*.sqlite3
+*.sql
+*.db
+*.log
+logs/
+
+# ─────────────────────────────────────────────────────────
+# IDE / OS
+# ─────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

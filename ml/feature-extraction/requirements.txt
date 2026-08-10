@@ -1,0 +1,26 @@
+# Florence-2 ships custom modelling code loaded via trust_remote_code=True and
+# breaks on several later transformers releases. Do not float this pin without
+# testing.
+transformers==4.53.0
+
+torch
+torchvision
+
+# Required by Florence-2's remote code even though nothing here imports them
+# directly.
+timm
+einops
+
+flask
+werkzeug
+pyngrok
+
+# Background removal (U^2-Net). onnxruntime-gpu is a drop-in swap if you have CUDA.
+rembg
+onnxruntime
+
+pillow
+numpy
+scikit-learn
+webcolors
+thefuzz[speedup]
