@@ -1,15 +1,14 @@
 # Own Your Style
 
-An outfit recommendation system that reasons about clothes you actually own.
+**An outfit recommendation system that reasons about clothes you actually own.**
 
-Photograph a garment and it is segmented, described, and classified into a
-structured attribute record. Ask for an outfit and a genetic algorithm searches
-your wardrobe for a combination that suits the weather, the temperature, and the
-occasion — scoring candidates against 166 curated reference outfits rather than
-picking from a fixed catalogue.
 
-Built as a graduation project: a Flutter client, a Laravel API, and two Python ML
-services.
+Photograph a garment → it is segmented, described, and classified into a structured attribute record.  
+Ask for an outfit → a genetic algorithm searches your wardrobe for a combination that suits the weather, temperature, and occasion — scoring candidates against 166 curated reference outfits.
+
+Built as a **Graduation Project** at Damascus University  
+(Flutter client + Laravel API + two Python ML services)
+
 
 ![App demo](https://github.com/user-attachments/assets/12b34e71-5231-4712-a21a-51bf1d828c13)
 
@@ -60,9 +59,9 @@ Four components, three of them services:
 | `ml/feature-extraction/` | Python + Flask | 5001 | Photo → structured attributes |
 | `ml/genetic/` | Python + Flask | 5002 | Wardrobe → recommended outfit |
 
-The Flutter app talks to all three services. The genetic service calls back into
-the Laravel API with the user's own bearer token to fetch their live wardrobe, so
-recommendations always reflect current inventory rather than a cached snapshot.
+The Flutter app talks to all three services. 
+The genetic service calls back into the Laravel API using the user’s bearer token,
+so recommendations always reflect the **live wardrobe**.
 
 ![Runtime pipeline](docs/pipeline.png)
 
@@ -91,8 +90,6 @@ own-your-style/
 Turns a raw photo of one garment into a machine-readable attribute record.
 
 ### Why two models
-
-They fail in opposite directions, which is what makes the pairing worth its cost.
 
 **[Florence-2-base](https://huggingface.co/microsoft/Florence-2-base)** generates
 a free-text description. It is open-vocabulary, so it reports details nobody
@@ -360,3 +357,13 @@ Requires the same Sanctum bearer token as the Laravel API.
 - The feature extraction service currently runs as a notebook rather than a
   standalone script.
 - Model weights download at runtime, so first startup requires network access.
+
+
+## Project Info
+
+* Title: امتلك أناقتك – نظام خزانة ذكية لتنسيق الملابس
+* University: Damascus University – Faculty of Informatics Engineering
+* Type: Graduation Project (Bachelor of Artificial Intelligence)
+* Year: 2025
+
+
